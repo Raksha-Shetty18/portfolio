@@ -5,7 +5,7 @@ Welcome to my personal portfolio repository! This is a modern, responsive, and h
 ## 🔗 Live Demo & Links
 
 *   **GitHub Repository**: [https://github.com/Raksha-Shetty18/portfolio](https://github.com/Raksha-Shetty18/portfolio)
-*   **Live Demo Website**: [https://raksha-portfolio.vercel.app](https://raksha-portfolio.vercel.app) *(Deploy on Vercel to activate)*
+*   **Live Demo Website**:https://portfolio-dusky-six-73.vercel.app/
 *   **Admin Dashboard**: `/admin/login`
 
 ---

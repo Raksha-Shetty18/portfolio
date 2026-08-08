@@ -1,4 +1,4 @@
-# 🌌 Raksha Shetty | Full Stack Developer Portfolio
+# 🌌 Raksha  | Full Stack Developer Portfolio
 
 Welcome to my personal portfolio repository! This is a modern, responsive, and highly interactive portfolio website built using the Next.js App Router, custom Vanilla CSS, Prisma, and SQLite. It features a complete administrative console for dynamic updates, smooth scroll-driven transitions, and interactive physics-based background animations.
 

@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌌 Raksha Shetty | Full Stack Developer Portfolio
 
-## Getting Started
+Welcome to my personal portfolio repository! This is a modern, responsive, and highly interactive portfolio website built using the Next.js App Router, custom Vanilla CSS, Prisma, and SQLite. It features a complete administrative console for dynamic updates, smooth scroll-driven transitions, and interactive physics-based background animations.
 
-First, run the development server:
+## 🔗 Live Demo & Links
 
+*   **GitHub Repository**: [https://github.com/Raksha-Shetty18/portfolio](https://github.com/Raksha-Shetty18/portfolio)
+*   **Live Demo Website**: [https://raksha-portfolio.vercel.app](https://raksha-portfolio.vercel.app) *(Deploy on Vercel to activate)*
+*   **Admin Dashboard**: `/admin/login`
+
+---
+
+## 🎨 Visual Mockup & Screenshots
+
+Here is a visual representation of the website layout, styling, and visual theme:
+
+![Homepage Layout Preview](https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1200&q=80)
+
+---
+
+## 🚀 Key Features
+
+### 💻 Dynamic Admin Console
+Equipped with an authorized admin interface (JWT HttpOnly cookie gated) to perform real-time CRUD:
+*   **Projects CRUD**: Add, edit, and delete projects with description, tech tags, GitHub links, and live URLs.
+*   **Skills Management**: Define skill category grouping, proficiency slider values, and icons.
+*   **Licenses & Certifications CRUD**: Keep your certifications up-to-date dynamically with issuer data and validation links.
+*   **Dynamic Site Copy**: Overwrite name, tagline, about introduction bio, education, objective, and technical interests instantly.
+*   **Resume PDF Upload**: Upload new PDF resume directly, overwriting the public asset instantly.
+*   **Contact Inbox**: View client submissions with email links, timestamps, and spam-clearing delete actions.
+
+### 🌌 Interactive Background & Scroll Animations
+*   **Cosmic Shifting Gradient**: A slowly moving animated linear gradient on the page body simulating deep-space gas clouds.
+*   **Responsive Particle Network**: HTML5 Canvas particle swarm drawing connections between moving nodes.
+*   **Mouse Gravity & Lines**: Canvas particles react to cursor movement, drifting toward it with connecting lines dynamically generated.
+*   **Scroll progress bar**: High-end neon loading progress bar integrated at the bottom of the sticky glass navbar.
+*   **Card Shimmer Highlights**: Hover light sweep sweep across projects and certificates cards.
+
+---
+
+## 🛠️ Tech Stack
+
+*   **Frontend**: React 19, Next.js 16 (App Router), TypeScript, Vanilla CSS.
+*   **Backend API**: Next.js Serverless Routes, JWT Authentication, bcryptjs.
+*   **Database & ORM**: Prisma ORM, SQLite (local development), easily scalable to PostgreSQL/MySQL.
+*   **Icons**: Lucide React.
+
+---
+
+## ⚙️ Local Development Setup
+
+To run this project locally, execute the following commands in the root directory:
+
+### 1. Install Dependencies
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Configure Environment Variables
+Create a `.env` file in the root directory:
+```text
+DATABASE_URL="file:./dev.db"
+JWT_SECRET="generate-any-long-secure-random-string-here"
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Run Database Migrations
+Create tables in the local SQLite file:
+```bash
+npx prisma migrate dev --name init
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 4. Seed Default Database Content
+Populate initial projects, skills, certificates, and default copy:
+```bash
+npx prisma db seed
+```
 
-## Learn More
+### 5. Start Local Server
+```bash
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) to view.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📈 Switch to PostgreSQL/MySQL for Production (e.g. Vercel Hosting)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+To deploy to Vercel with a persistent cloud database (e.g., Supabase, Neon, AWS RDS):
+1. In `prisma/schema.prisma`, change `provider = "sqlite"` to `"postgresql"` (or `"mysql"`).
+2. Configure `DATABASE_URL` in Vercel to point to your cloud database connection string.
+3. Deploy the repository to Vercel.
+4. Run migrations and seed the database once:
+   ```bash
+   npx prisma migrate deploy
+   npx prisma db seed
+   ```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📄 License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Licensed under the MIT License. Feel free to use it for personal portfolio styling!

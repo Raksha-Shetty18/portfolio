@@ -31,7 +31,7 @@ async function main() {
       technologies: 'React.js, Node.js, Express.js, MongoDB, Chart.js',
       githubUrl: 'https://github.com/Raksha-Shetty18',
       liveUrl: 'https://github.com/Raksha-Shetty18',
-      imageUrl: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80',
+      imageUrl: '/hotel-management.jpg',
     },
     {
       title: 'WeatherNow',
@@ -39,7 +39,7 @@ async function main() {
       technologies: 'HTML5, CSS3, JavaScript, OpenWeatherMap API, Geolocation API',
       githubUrl: 'https://github.com/Raksha-Shetty18',
       liveUrl: 'https://github.com/Raksha-Shetty18',
-      imageUrl: 'https://images.unsplash.com/photo-1592210454359-9043f067919b?auto=format&fit=crop&w=600&q=80',
+      imageUrl: '/weathernow.jpg',
     },
     {
       title: 'Daily Planner',
@@ -47,7 +47,7 @@ async function main() {
       technologies: 'React.js, LocalStorage API, CSS Grid, HTML5 Drag and Drop',
       githubUrl: 'https://github.com/Raksha-Shetty18',
       liveUrl: 'https://github.com/Raksha-Shetty18',
-      imageUrl: 'https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80',
+      imageUrl: '/daily-planner.jpg',
     },
   ];
 
